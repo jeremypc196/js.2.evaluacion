@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <title>detalle</title>
+  </head>
+  <body>
+   <header class="container-fluid">
+      <div class="row bg-amarrillo">
+         <div class="col col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand" href="index.html">CertusShop</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <br>
+                 <ul class="navbar-nav col-lg-10">
+                   <li class="nav-item active  col-lg-12">
+                     <div class="input-group">
+                     <input class="form-control mr-sm-12 col-lg-12" type="search" placeholder="Busca productos" aria-label="Buscar">
+                     <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                      </div>
+                      </div>
+                   </li>
+                 </ul>
+                 <form class="form-inline my-2 my-lg-2">
+                  <a class="btn btn-primary-outline mr-sm-2" href="###"> <i class="fa fa-car" aria-hidden="true"></i></a>
+                  <div class="dropdown">
+                  <a class="btn btn-primary-outline mr-sm-2 dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="cliente/pedidos-cliente.html">Mis pedidos</a>
+                   </div>
+                  </div> 
+                  <a class="btn btn-primary-outline mr-sm-2" href="###"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>      
+                </form>
+               </div>
+             </nav>
+         </div>
+      </div>
+  </header> 
+   <hr>
+   <br>
+   <main class="container">
+      <div class="row">
+         <div class="col-sm-12 col-md-12 col-lg-12">
+           <div class="row">
+            <div class="col-sm-5 col-md-5 col-lg-5">
+               <div class="row">
+                  <div class="col col-12">
+                     <img class="img-fluid mx-auto d-block" src="https://i.linio.com/p/0711a2f51316e22ea6ae083207f6c8f3-catalog.jpg" alt="Polo tipo cuello">
+                  </div>
+                  <div class="col col-12">
+                     <br>
+                     <h5 class="text-left text-info">Características destacadas</h5>
+                  </div>
+                  <div class="col col-12">
+                     <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <div class="row">
+                             <div class="col col-lg-4 text-center">MODELO</div>
+                             <div class="col col-lg-4 text-center">PESO(KG)</div>
+                             <div class="col col-lg-4 text-center">MATERIAL</div>
+                          </div>
+                          <div class="row">
+                           <div class="col col-lg-4 text-center">129202</div>
+                           <div class="col col-lg-4 text-center">3</div>
+                           <div class="col col-lg-4 text-center">40% poliéster</div>
+                        </div>
+                        <br>
+                        <div class="row">
+                           <div class="col col-lg-12 text-center">Disponibiliad: <span class="text-success">En Stock</span></div>
+                        </div>
+
+                        </div>
+                      </div> 
+                  </div>
+               </div>
+              
+            </div>
+            <div class="col-sm-7 col-md-7 col-lg-7">
+               <div class="row">
+                  <div class="col col-12">
+                     <h2>POLO TIPO CUELLO</h2>
+                  </div>
+                  <div class="col col-12">
+                     <h4 class="text-success">PEN 35.00</h4>
+                  </div>
+                  <div class="col col-12">
+                     <div class="alert alert-primary" role="alert">
+                        Envio PEN 9.90. Recibelo en apróximadamente 3 días 
+                      </div> 
+                  </div>
+            
+                  <div class="col col-12">
+                     <p>Polo confeccionado en tejido de algodón con estructura piqué. Cuello mao 
+                        y manga corta acabada en rib. Bajo con aberturas laterales. Cierre frontal con botones.</p>
+                  </div>
+                  <div class="col col-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                     <div class="form-group">
+                        <select id="inputState" class="form-control">
+                        <option selected>Tallas</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col col-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                     <input type="number" class="form-control" id="cantidad" value="1" required>
+                  </div>
+                  <div class="col col-12 mt-5">
+                     <a href="#" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#carritoModal" onclick="anyadirProductoAlCarrito()">Añadir al carrito</a>
+                  </div>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="carritoModal" tabindex="-1" marcador="1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-lg">
+                     <div class="modal-content">
+                        <div class="container">
+                           <div class="row">
+                               <!-- Elementos generados a partir del JSON -->
+                               <main id="items" class="col-sm-8 row"></main>
+                               <!-- Carrito -->
+                               <aside class="col-sm-4">
+                                   <h2>Carrito</h2>
+                                   <!-- Elementos del carrito -->
+                                   <ul id="carrito" class="list-group"></ul>
+                                   <hr>
+                                   <!-- Precio total -->
+                                   <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                                   <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                               </aside>
+                           </div>
+                       </div>
+                   </body>
+                        <div class="modal-footer">
+                           <a href="carrito.html" type="button" class="btn btn-primary btn-block">Ir al carrito</a>
+                           <a href="index.html" type="button" class="btn btn-block btn-outline-secondary">Seguir comprando</a>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+           </div> 
+        
+         
+         </div>
+       
+      </div>
+   </main>
+
+   <script src="/3evaluacion/js/agregar-carrito.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
